@@ -61,7 +61,7 @@ def is_gs_path(uri) -> bool:
 ## remove gs for databricks
 def open_local_or_gs(path, mode):
     #open_func = gcsfs.GCSFileSystem().open if is_gs_path(path) else open
-    open_fun = open
+    open_func = open
     return open_func(path, mode)
 
 
